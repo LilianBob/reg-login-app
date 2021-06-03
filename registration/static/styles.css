@@ -7,11 +7,11 @@
     margin:auto;
     padding: 50px;
 }
-.erroMessages{
+erroMessages{
     border: 1px solid black;
     background-color:grey;
 }
-form{
+form .row{
     display: block;
     margin:auto
 } 
@@ -20,4 +20,4 @@ h1{
 }
 nav ul li{
     float: right;
-}
+} 
