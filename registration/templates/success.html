@@ -7,12 +7,29 @@
         <title>Document</title>
     </head>
     <body>
-        <nav>
-            <ul>
-                <li><a href="/logout">Logout</a></li>
-            </ul>
-        </nav>
-        <h1>Welcome to your shows page!</h1>
-        <h1>Congrats, {{ user.first_name }} {{ user.last_name }}</h1>
+        <div class="container-md">
+            <nav>
+                <ul>
+                    <li><a href="/logout">Logout</a></li>
+                </ul>
+            </nav>
+            <main> 
+                <div class="welcome">
+                    <h1>Congrats, {{ user.first_name }} {{ user.last_name }}</h1>
+                    <p><b>Welcome to your shows page!</b></p>
+                </div>
+                <div class="selected">
+                    {% if selected_shows %}
+                        <ul class="showsSelection">
+                            {% for show in selected_shows %}
+                                <li> {{ show.title }}</li>
+                            {% endfor %}
+                        </ul>
+                    {% endif %}
+                </div>
+                <div class="recommended"></div>
+            </main>
+        </div>
+        
     </body>
 </html>

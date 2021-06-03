@@ -3,17 +3,21 @@
     padding: 0;
 }
 .container-md{
+    display: block;
     margin:auto;
     padding: 50px;
 }
-/* #navCols .form-group{
+.erroMessages{
+    border: 1px solid black;
+    background-color:grey;
+}
+form{
     display: block;
     margin:auto
 } 
-.leader{
-    display:flex;
-    justify-content: space-between;
-}
 h1{
     text-align:center;
-} */
+}
+nav ul li{
+    float: right;
+}
