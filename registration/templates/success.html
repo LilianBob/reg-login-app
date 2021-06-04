@@ -14,11 +14,11 @@
                 </ul>
             </nav>
             <main> 
-                <div class="welcome">
+                <div class=" row welcome">
                     <h1>Congrats, {{ user.first_name }} {{ user.last_name }}</h1>
                     <p><b>Welcome to your shows page!</b></p>
                 </div>
-                <div class="selected">
+                <div class=" row selected">
                     {% if selected_shows %}
                         <ul class="showsSelection">
                             {% for show in selected_shows %}
@@ -27,7 +27,7 @@
                         </ul>
                     {% endif %}
                 </div>
-                <div class="recommended"></div>
+                <div class=" row recommended"></div>
             </main>
         </div>
         

@@ -8,10 +8,10 @@ class UserManager(models.Manager):
     def registration_val(self, post_data):
         errors = {}
         if not EMAIL_REGEX.match(post_data['email']):
-            errors['email'] = 'Email is not valid'
+            errors['email'] = 'Email is not valid!'
         if post_data['password'] != post_data['confirm_password']:
-            errors['password'] = 'Your password and Confirm Password do not match'
-            print('gets inside registration val function')
+            errors['password'] = 'Your Password and Confirm Password do not match!'
+            # print('gets inside registration val function')
         return errors
     def authenticate(self, email, password):
         users = self.filter(email=email)
