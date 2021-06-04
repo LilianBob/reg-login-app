@@ -74,7 +74,7 @@ def success(request):
         return render(request, 'success.html', context)
     else: 
         messages.error(request, 'You must be logged in order to access the shows')
-        return redirect("/login_after_reg")
+    return redirect("/login_after_reg")
 
 def logout(request):
     del request.session['user_id']
